@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!--fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <!--propriedades css-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/btnPopUp.css">
+    <link rel="stylesheet" href="../css/popUpContent.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+
+    <style>
+        h3 {
+            color: var(--text);
+            font-size: 20px;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .card {
+            margin-bottom: 5%;
+            background-color: #000000;
+            color: #e7e7e7;
+        }
+
+        .form-text {
+            color: #e7e7e7;
+            margin-bottom: 5%;
+            margin-top: 3%;
+            opacity: 75%;
+        }
+
+        .card-body {
+            margin-top: -5%;
+        }
+
+        .input-text::placeholder {
+            color: #e7e7e7;
+            opacity: 50%;
+        }
+
+        .input-text {
+            color: #e7e7e7;
+            opacity: 80%;
+        }
+
+        .button {
+            color: var(--bs-white);
+            background-color: #303030;
+        }
+
+        .card select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: #1C1C1C; font-family: 'Quicksand', sans-serif; position: relative;">
+    <!--links js off e online-->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-dark navbar-expand-sm" style="background-color: #000000;">
+        <div class="container-fluid">
+            <a class="" href="index.html">
+                <img src="../img/navbar/back.png" alt="Bootstrap" width="25" height="25">
+            </a>
+            <a class="navbar-brand" style="font-size: 20px; margin-left: 13%;">Configurações</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--menu-->
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header" style="background-color: #080808;">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" style="background-color: #1C1C1C;">
+                    <div class="d-grid">
+                        <div class="userPic">
+                            <a href="perfil.html">
+                                <img class="rounded-circle" src="../img/perfil/foto-perfil.webp" alt="Bootstrap"
+                                    width="100" height="100">
+                            </a>
+                            <h3 style="margin-top: 5%; color: #e7e7e7;">Yves Sant Laurent</h3>
+                        </div>
+
+                        <div class="d-grid mt-2" style="opacity: 90%;">
+                            <a href="perfil.html" class="btn btn-outline-light" type="button"
+                            style="
+                            --bs-btn-padding-y: .3rem;
+                            --bs-btn-font-size: .9rem;">
+                                Acessar perifl
+                            </a>
+                        </div>
+
+                        <!--divisor-->
+                        <hr class="border border-secondary border-1 opacity-25" style="margin-bottom: 1%;">
+
+                        <!-- menu -->
+                        <div class="menu mt-2">
+                            <ul>
+                                <li>
+                                    <a href="index.html">
+                                        <img class="btnAcervo" src="../img/menu_dark/home.png"
+                                            alt="Ícone da opção acervo">Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="acervo.php">
+                                        <img class="btnAcervo" src="../img/menu_dark/layout.png"
+                                            alt="Ícone da opção acervo">Acervo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="criar_classificacao.html">
+                                        <img class="btnRandom" src="../img/menu_dark/add-button.png"
+                                            alt="Ícone da opção acervo">Criar Classificação
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="random.html">
+                                        <img class="btnRandom" src="../img/menu_dark/shuffle-arrows.png"
+                                            alt="Ícone da opção acervo">Random
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="backup.html">
+                                        <img class="btnBackup" src="../img/menu_dark/copia-de-seguranca.png"
+                                            alt="Ícone da opção acervo">Backup
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="infoapp.html">
+                                        <img class="btnInfo" src="../img/menu_dark/informacoes.png"
+                                            alt="Ícone da opção acervo">Informações do Aplicativo
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!--div main-->
+    <div class="d-grid" style="justify-content: center;">
+
+        <!-- div card que porta as informações de notificação -->
+        <div class="p-4 rounded mt-4" style="background-color: #00000050;">
+            <h5 class="text-center text-light">Notificações</h5>
+
+            <!-- divisor -->
+            <div class="text-bg-dark"><hr></div>
+
+            <!-- div que porta os switches -->
+            <div class="container text-center" data-bs-theme="dark">
+
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label text-light" for="flexSwitchCheckDefault">
+                        Permitir notificações</label>
+                </div>
+
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label text-light" for="flexSwitchCheckDefault">
+                        Selo no ícone do app?</label>
+                </div>
+
+            </div>
+
+            <!-- divisor -->
+            <div class="text-bg-dark"><hr></div>
+
+            <div class="container text-center" data-bs-theme="dark">
+
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option selected>Selecione</option>
+                        <option value="1">Priorizar</option>
+                        <option value="2">Desativar</option>
+                    </select>
+                    <label for="floatingSelect">Prioridade das notificações</label>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- div card que porta o combo -->
+        <div class="p-4 rounded mt-4" style="background-color: #00000050;">
+            <h5 class="text-center text-light">Perfil</h5>
+
+            <!-- divisor -->
+            <div class="text-bg-dark"><hr></div>
+
+            <!-- div que porta os switches -->
+            <div class="container text-center" data-bs-theme="dark">
+
+                <div class="d-grid gap-2 mt-2">
+                    <a href="perfil.html" class="btn btn-dark" type="button">
+                        Acessar perifl
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- div card que porta o combo -->
+        <div class="p-4 rounded mt-4" style="background-color: #00000050;"as>
+            <h5 class="text-center text-light">Ajuda e Suporte (SAC)</h5>
+
+            <!-- divisor -->
+            <div class="text-bg-dark"><hr></div>
+
+            <!-- div que porta os switches -->
+            <div class="container text-center" data-bs-theme="dark">
+
+                <div class="d-grid gap-2 mt-2">
+                    <a href="infoapp.html" class="btn btn-dark" type="button">
+                        Acessar informacões do app
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--footer com o nome da aplicação-->
+    <footer id="footer" class="container mt-5" style="color: white;">
+        <center>
+            <p><strong>ACERVO DIGITAL ®</strong> <br>
+                <font size="2">DESENVOLVIMENTO DE SISTEMAS <br> ETEC DE ILHA SOLTEIRA</font>
+            </p>
+        </center>
+    </footer>
+
+</body>
+
+</html>

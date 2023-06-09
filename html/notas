@@ -1,0 +1,41 @@
+arquivos alterados: SAVE TEST
+    obs: criar tipos novos -> esporte, estravagente, casual, formal, etc.
+
+1. criar_regra.php -> criar_regra.html
+    a. todos os botões que tinham link para "criar_regra.php" viraram "criar_regra.html"
+
+
+2. editar_regra.php -> editar_regra.html
+    a. todos os botões que tinham link para "editar_regra.php" viraram "editar_regra.html"
+
+3. index.html -> index.html
+______
+
+atribuição: alimentar as 3 regras da página de random inicial
+
+1. combos para date -- OK
+    parâmetros:
+        a. calça c1 c2 c3
+        b. moletom c1 c2 c3
+        c. camisa c1 c2 c3
+        d. acessorios c1 c2 c3
+        e. sneakers c1 c2 c3
+        c. bags c1 c2 c3
+
+2. combos para treinar -- OK
+    parâmetros:
+        a. short c1 c2 c3
+        b. regata c1 c2 c3
+        c. camisa térmica c1 c2 c3
+        d. sneakers c1 c2 c3
+        e. bags c1 c2 c3 
+        f. legging c1 c2 c3
+
+2. combos para extravasar -- OK
+    parâmetros:
+        a. camisa c1 c2 c3
+        b. calça c1 c2 c3
+        c. jaqueta c1 c2 c3
+        d. tênis c1 c2 c3
+        e. acessório c1 c2 c3
+        f. acessório c1 c2 c3
