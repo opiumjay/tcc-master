@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
@@ -26,52 +26,68 @@
             font-family: 'Quicksand', sans-serif;
         }
 
+        .card {
+            margin-bottom: 5%;
+            background-color: #000000;
+            color: #e7e7e7;
+        }
+
+        .form-text {
+            color: #e7e7e7;
+            margin-bottom: 5%;
+            margin-top: 3%;
+            opacity: 75%;
+        }
+
+        .card-body {
+            margin-top: -5%;
+        }
+
+        .input-text::placeholder {
+            color: #e7e7e7;
+            opacity: 50%;
+        }
+
+        .input-text {
+            color: #e7e7e7;
+            opacity: 80%;
+        }
+
         .button {
             color: var(--bs-white);
-            background-color: #00000050;
+            background-color: #303030;
+        }
+
+        .button-black {
+            color: var(--bs-white);
+            background-color: #131313;
+        }
+
+        .card select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-size: 15px;
         }
     </style>
 
 </head>
 
 <body style="background-color: #1C1C1C; font-family: 'Quicksand', sans-serif; position: relative;">
-
     <!--links js off e online-->
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
 
-    <!--popper js-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
-        integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
-        crossorigin="anonymous"></script>
-
-    <!--funções que abre e fecha o pop up-->
-    <script>
-        function showPopup() {
-            var popup = document.getElementById("popup");
-            popup.style.display = "flex";
-        }
-    </script>
-
-    <script>
-        function hidePopup() {
-            var popup = document.getElementById("popup");
-            popup.style.display = "none";
-        }
-    </script>
-
-    <!--! navbar -->
-    <nav class="navbar navbar-dark" style="background-color: #000000;">
+    <!-- navbar -->
+    <nav class="navbar navbar-dark navbar-expand-sm" style="background-color: #000000;">
         <div class="container-fluid">
-            <a class="" href="index.html">
+            <a class="" href="backup.html">
                 <img src="../img/navbar/back.png" alt="Bootstrap" width="25" height="25">
             </a>
-            <a class="navbar-brand" style="margin-left: 4%; font-size: 20px; color: #F7F7F7;">Informações do App</a>
+            <a class="navbar-brand" style="font-size: 20px; margin-left: 13%;">Backup</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
                 aria-controls="offcanvasExample">
                 <span class="navbar-toggler-icon"></span>
@@ -135,15 +151,15 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="backup.html">
-                                        <img class="btnBackup" src="../img/menu_dark/copia-de-seguranca.png"
-                                            alt="Ícone da opção acervo">Backup
-                                    </a>
-                                </li>
-                                <li>
                                     <a href="config.html">
                                         <img class="btnConfig" src="../img/menu_dark/config.png"
                                             alt="Ícone da opção acervo">Configurações
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="infoapp.html">
+                                        <img class="btnInfo" src="../img/menu_dark/informacoes.png"
+                                            alt="Ícone da opção acervo">Informações do Aplicativo
                                     </a>
                                 </li>
                             </ul>
@@ -151,84 +167,24 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </nav>
 
     <!--div main-->
-    <div class="d-block" style="padding: 5%;">
+    <div class="d-grid p-3" style="justify-content: center;">
 
-        <!--div botões-->
-        <div class="d-grid">
-            <div class="row row-cols-1">
-                <div class="col" style="padding: 1%;">
-                    <div class="d-grid gap-2">
-                        <button class="btn button" style="--bs-btn-padding-y: .65rem; --bs-btn-font-size: 1rem;"
-                            type="button">Guia do Usuário
-                        </button>
-                    </div>
-                </div>
-                <div class="col" style="padding: 1%;">
-                    <div class="d-grid gap-2">
-                        <button class="btn button" style="--bs-btn-padding-y: .65rem; --bs-btn-font-size: 1rem;"
-                            type="button">Política de Privacidade
-                        </button>
-                    </div>
-                </div>
-                <div class="col" style="padding: 1%;">
-                    <div class="d-grid gap-2">
-                        <a href="feedback.html" 
-                        class="btn button" 
-                        style="--bs-btn-padding-y: .65rem; --bs-btn-font-size: 1rem;">
-                        Feedback</a>
-                    </div>
-                </div>
+        <div class="container-fluid text-center mt-4" style="color: #e7e7e7;">
+            
+
+            <div 
+            class="badge bg-success text-center fw-semibold fs-5 text" style="width: auto;">
+                <h3>Backup realizado com sucesso!</h3> 
             </div>
         </div>
 
-        <!--divisor-->
-        <hr class="border border-secondary border-1 opacity-25">
-
-        <!--div título contatos-->
-        <div class="d-block text-center" style="margin-bottom: 5%; margin-top: 5%;">
-            <h3>Contatos</h3>
-        </div>
-
-        <!--div informações contatos-->
-        <div class="container text-center" style="color: #ffffff;">
-            <div class="row" style="background-color: #00000050; padding: 3%; border-radius: 10px;">
-                <div class="col-sm">Diego Edemir:</div>
-                <div class="col-sm">diego.edemir@unesp.br</div>
-                <div class="col-sm">@______opiumjay</div>
-            </div><br>
-            <div class="row">
-                <div class="col-sm">Kenji Takabayashi:</div>
-                <div class="col-sm">kenjisilva12@gmail.com</div>
-                <div class="col-sm">+55 18 99803-2218</div>
-            </div><br>
-            <div class="row" style="background-color: #00000050; padding: 3%; border-radius: 10px;">
-                <div class="col-sm">Erick Akira:</div>
-                <div class="col-sm">erick.ogura@etec.sp.gov.br</div>
-                <div class="col-sm">+55 18 99107-8339</div>
-            </div><br>
-            <div class="row">
-                <div class="col-sm">Rhian Tavares:</div>
-                <div class="col-sm">rhiantavares.silva@gmail.com</div>
-                <div class="col-sm">+55 18 99802-1097</div>
-            </div>
-        </div>
-
-        <!--divisor-->
-        <hr class="border border-secondary border-1 opacity-25">
     </div>
 
-    <!--footer com o nome da aplicação-->
-    <footer id="footer" class="container" style="color: white;">
-        <center>
-            <p><strong>ACERVO DIGITAL ®</strong> <br>
-                <font size="2">DESENVOLVIMENTO DE SISTEMAS <br> ETEC DE ILHA SOLTEIRA</font>
-            </p>
-        </center>
-    </footer>
 </body>
 
 </html>

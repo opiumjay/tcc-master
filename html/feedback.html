@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
@@ -26,6 +26,10 @@
             font-family: 'Quicksand', sans-serif;
         }
 
+        a {
+            text-decoration: none;
+        }
+
         .button {
             color: var(--bs-white);
             background-color: #00000050;
@@ -35,7 +39,6 @@
 </head>
 
 <body style="background-color: #1C1C1C; font-family: 'Quicksand', sans-serif; position: relative;">
-
     <!--links js off e online-->
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
@@ -66,12 +69,9 @@
     </script>
 
     <!--! navbar -->
-    <nav class="navbar navbar-dark" style="background-color: #000000;">
+    <nav class="navbar navbar-dark" style="background-color: #080808;">
         <div class="container-fluid">
-            <a class="" href="index.html">
-                <img src="../img/navbar/back.png" alt="Bootstrap" width="25" height="25">
-            </a>
-            <a class="navbar-brand" style="margin-left: 4%; font-size: 20px; color: #F7F7F7;">Informações do App</a>
+            <a class="navbar-brand" style="margin-left: 1rem; font-size: 20px;">Feedback</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
                 aria-controls="offcanvasExample">
                 <span class="navbar-toggler-icon"></span>
@@ -96,8 +96,7 @@
                         </div>
 
                         <div class="d-grid mt-2" style="opacity: 90%;">
-                            <a href="perfil.html" class="btn btn-outline-light" type="button"
-                            style="
+                            <a href="perfil.html" class="btn btn-outline-light" type="button" style="
                             --bs-btn-padding-y: .3rem;
                             --bs-btn-font-size: .9rem;">
                                 Acessar perifl
@@ -146,89 +145,33 @@
                                             alt="Ícone da opção acervo">Configurações
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="infoapp.html">
+                                        <img class="btnInfo" src="../img/menu_dark/informacoes.png"
+                                            alt="Ícone da opção acervo">Informações do Aplicativo
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </nav>
 
     <!--div main-->
     <div class="d-block" style="padding: 5%;">
 
-        <!--div botões-->
-        <div class="d-grid">
-            <div class="row row-cols-1">
-                <div class="col" style="padding: 1%;">
-                    <div class="d-grid gap-2">
-                        <button class="btn button" style="--bs-btn-padding-y: .65rem; --bs-btn-font-size: 1rem;"
-                            type="button">Guia do Usuário
-                        </button>
-                    </div>
-                </div>
-                <div class="col" style="padding: 1%;">
-                    <div class="d-grid gap-2">
-                        <button class="btn button" style="--bs-btn-padding-y: .65rem; --bs-btn-font-size: 1rem;"
-                            type="button">Política de Privacidade
-                        </button>
-                    </div>
-                </div>
-                <div class="col" style="padding: 1%;">
-                    <div class="d-grid gap-2">
-                        <a href="feedback.html" 
-                        class="btn button" 
-                        style="--bs-btn-padding-y: .65rem; --bs-btn-font-size: 1rem;">
-                        Feedback</a>
-                    </div>
-                </div>
-            </div>
+        <div class="d-grid gap-2 mt-2">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScZ9i9n_ePObcZ1t2ymqeaR6h5AcdaJX-qfbaatHIPu9vDa3w/viewform?usp=sf_link"
+                class="btn button btn-lg">
+                Acessar formulário
+            </a>
         </div>
 
-        <!--divisor-->
-        <hr class="border border-secondary border-1 opacity-25">
-
-        <!--div título contatos-->
-        <div class="d-block text-center" style="margin-bottom: 5%; margin-top: 5%;">
-            <h3>Contatos</h3>
-        </div>
-
-        <!--div informações contatos-->
-        <div class="container text-center" style="color: #ffffff;">
-            <div class="row" style="background-color: #00000050; padding: 3%; border-radius: 10px;">
-                <div class="col-sm">Diego Edemir:</div>
-                <div class="col-sm">diego.edemir@unesp.br</div>
-                <div class="col-sm">@______opiumjay</div>
-            </div><br>
-            <div class="row">
-                <div class="col-sm">Kenji Takabayashi:</div>
-                <div class="col-sm">kenjisilva12@gmail.com</div>
-                <div class="col-sm">+55 18 99803-2218</div>
-            </div><br>
-            <div class="row" style="background-color: #00000050; padding: 3%; border-radius: 10px;">
-                <div class="col-sm">Erick Akira:</div>
-                <div class="col-sm">erick.ogura@etec.sp.gov.br</div>
-                <div class="col-sm">+55 18 99107-8339</div>
-            </div><br>
-            <div class="row">
-                <div class="col-sm">Rhian Tavares:</div>
-                <div class="col-sm">rhiantavares.silva@gmail.com</div>
-                <div class="col-sm">+55 18 99802-1097</div>
-            </div>
-        </div>
-
-        <!--divisor-->
-        <hr class="border border-secondary border-1 opacity-25">
     </div>
 
-    <!--footer com o nome da aplicação-->
-    <footer id="footer" class="container" style="color: white;">
-        <center>
-            <p><strong>ACERVO DIGITAL ®</strong> <br>
-                <font size="2">DESENVOLVIMENTO DE SISTEMAS <br> ETEC DE ILHA SOLTEIRA</font>
-            </p>
-        </center>
-    </footer>
 </body>
 
 </html>

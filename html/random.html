@@ -90,18 +90,35 @@
             <!--menu-->
             <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasExample"
                 aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header" style="background-color: #000000;">
+                <div class="offcanvas-header" style="background-color: #080808;">
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body" style="background-color: #303030;">
-                    <div class="d-grid" style="place-items: center;">
+                <div class="offcanvas-body" style="background-color: #1C1C1C;">
+                    <div class="d-grid">
                         <div class="userPic">
-                            <img style="width: 30%;" src="../img/menu_dark/perfil.png">
-                            <h1 style="margin-top: 5%; color: #e7e7e7;">Username</h1>
+                            <a href="perfil.html">
+                                <img class="rounded-circle" src="../img/perfil/foto-perfil.webp" alt="Bootstrap"
+                                    width="100" height="100">
+                            </a>
+                            <h3 style="margin-top: 5%; color: #e7e7e7;">Yves Sant Laurent</h3>
                         </div>
-                        <div class="menu">
+
+                        <div class="d-grid mt-2" style="opacity: 90%;">
+                            <a href="perfil.html" class="btn btn-outline-light" type="button"
+                            style="
+                            --bs-btn-padding-y: .3rem;
+                            --bs-btn-font-size: .9rem;">
+                                Acessar perifl
+                            </a>
+                        </div>
+
+                        <!--divisor-->
+                        <hr class="border border-secondary border-1 opacity-25" style="margin-bottom: 1%;">
+
+                        <!-- menu -->
+                        <div class="menu mt-2">
                             <ul>
                                 <li>
                                     <a href="index.html">
@@ -116,19 +133,19 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="testeopt.html">
-                                        <img class="btnRandom" src="../img/menu_dark/shuffle-arrows.png"
-                                            alt="Ícone da opção acervo">Random
+                                    <a href="criar_classificacao.html">
+                                        <img class="btnRandom" src="../img/menu_dark/add-button.png"
+                                            alt="Ícone da opção acervo">Criar Classificação
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="testeopt.html">
+                                    <a href="backup.html">
                                         <img class="btnBackup" src="../img/menu_dark/copia-de-seguranca.png"
                                             alt="Ícone da opção acervo">Backup
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="testeopt.html">
+                                    <a href="config.html">
                                         <img class="btnConfig" src="../img/menu_dark/config.png"
                                             alt="Ícone da opção acervo">Configurações
                                     </a>
